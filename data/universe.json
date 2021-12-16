@@ -1,0 +1,88 @@
+[
+  {
+    "id": "0",
+    "name": "Earth",
+    "description": "Earth is the third planet from the Sun and the only astronomical object known to harbour and support life. 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater, which together constitute the hydrosphere.",
+
+    "facts": [
+      "1.Earth is Mostly Iron, Oxygen and Silicon",
+      "\n2.70% of the Earths Surface is Covered in Water",
+      "\n3.Earth is the Only Planet Known to Have Life"
+    ],
+    "image": "https://cdn.pixabay.com/photo/2016/05/01/21/20/earth-1365995_960_720.jpg",
+
+    "distance": "0 km",
+    "visited": "2.3 million years ago.."
+  },
+  {
+    "id": "1",
+    "name": "Moon",
+    "description": "The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth (comparable to the width of Australia), it is the largest natural satellite in the Solar System relative to the size of its planet, the fifth largest satellite in the Solar System overall, and is larger than any known dwarf planet. The Moon is a planetary-mass object that formed a differentiated rocky body, making it a satellite planet under geophysical definitions of the term",
+
+    "facts": [
+      "The Moon’s surface is actually dark\n",
+      "The Moon was made when a rock smashed into Earth\n",
+      " There is water on the Moon!"
+    ],
+    "image": "https://cdn.pixabay.com/photo/2021/06/26/06/52/moon-6365467_960_720.jpg",
+
+    "distance": "384 400 km",
+    "visited": "July 20, 1969 by Neil Armstrong"
+  },
+  {
+    "id": "2",
+    "name": "Venus",
+    "description": "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight",
+
+    "facts": [
+      "A day on Venus is longer than a year",
+      "Venus is the second brightest natural object in the night sky after the Moon",
+      " Venus has 90 times the atmospheric pressure of Earth!"
+    ],
+    "image": "https://cdn.pixabay.com/photo/2011/12/13/14/39/venus-11022_960_720.jpg",
+    "distance": "61 million km",
+    "visited": " Aug. 10, 1990 by NASA's Magellan"
+  },
+  {
+    "id": "3",
+    "name": "Saturn",
+    "description": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.It only has one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive",
+
+    "facts": [
+      "Saturn is the flattest planet",
+      "Saturn has more moons than any other planet.",
+      "Saturn is made mostly of hydrogen"
+    ],
+    "image": "https://cdn.pixabay.com/photo/2018/07/01/00/33/planet-3508677_960_720.jpg",
+    "distance": "~1.2 Billion km",
+    "visited": " 1979 NASA's Pioneer 11 provided first close look"
+  },
+  {
+    "id": "4",
+    "name": "Mars",
+    "description": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the \"Red Planet\".The latter refers to the effect of the iron oxide prevalent on Mars's surface, which gives it a reddish appearance, that is distinctive among the astronomical bodies visible to the naked eye",
+
+    "facts": [
+      "You could jump 3x higher than on Earth.",
+      "Mars has the largest canyon in our solar system, Valles Marineris",
+      "Mars is named after the Roman god of war"
+    ],
+    "image": "https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_960_720.jpg",
+    "distance": "54.6 million km",
+    "visited": "  July 14, 1965 NASA's Mariner 4"
+  },
+  {
+    "id": "5",
+    "name": "Jupiter",
+    "description": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third-brightest natural object in the Earth's night sky after the Moon and Venus",
+
+    "facts": [
+      "Jupiter is the largest planet in the Solar System. 318xEarth",
+      "Jupiter’s Magnetic Field Is 14 Times Stronger Than Earth’s",
+      "Jupiter Has 67 Moons"
+    ],
+    "image": "https://cdn.pixabay.com/photo/2020/02/22/08/15/space-4869815_960_720.jpg",
+    "distance": "968 million km",
+    "visited": "  December 1973 by NASA's Pioneer11"
+  }
+]

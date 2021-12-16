@@ -1,0 +1,298 @@
+<script
+  src="https://kit.fontawesome.com/e90d9678f0.js"
+  crossorigin="anonymous"
+></script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    padding: none;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul,
+  ol {
+    list-style: decimal;
+  }
+
+  .parallax {
+    position: relative;
+    /* The image used */
+    background-image: url("{%IMAGE%}");
+    /* Set a specific height */
+    min-height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-text {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-family: "Audiowide", cursive;
+    color: white;
+    font-size: 100px;
+    -webkit-animation: showUp 3s forwards;
+    animation: showUp 3s forwards;
+    z-index: 1;
+  }
+
+  .bg-text {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    height: 150px;
+    width: 30%;
+    background-color: black;
+    opacity: 0.3;
+  }
+
+  .page {
+    display: -ms-grid;
+    display: grid;
+    height: 800px;
+  }
+
+  .nav-bar {
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    width: 100%;
+    padding: 15px;
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-family: "Audiowide", cursive;
+    z-index: 1;
+  }
+
+  .nav-bar a {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  .nav-bar a:hover {
+    -webkit-animation: border 1s;
+    animation: border 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 1;
+  }
+
+  .main {
+    width: 60%;
+    margin: auto;
+    height: 1000px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  @-webkit-keyframes showUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes showUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes border {
+    0% {
+      border: none;
+    }
+    25% {
+      border-bottom: 1px solid black;
+    }
+    50% {
+      border-left: 1px solid black;
+    }
+    75% {
+      border-top: 1px solid black;
+    }
+    100% {
+      border: 1px solid black;
+    }
+  }
+
+  @keyframes border {
+    0% {
+      border: none;
+    }
+    25% {
+      border-bottom: 1px solid black;
+    }
+    50% {
+      border-left: 1px solid black;
+    }
+    75% {
+      border-top: 1px solid black;
+    }
+    100% {
+      border: 1px solid black;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  section {
+    height: auto;
+    border-bottom: 2px solid gray;
+  }
+
+  section > i {
+    font-size: 100px;
+    color: black;
+    position: relative;
+    top: 30%;
+    left: 45%;
+    opacity: 0.4;
+    animation: showUp 3s forwards;
+  }
+
+  section > i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  section > p {
+    display: none;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    animation: showUp 3s forwards;
+    font-weight: 200;
+  }
+
+  .showUp {
+    animation: showUp 3s forwards;
+  }
+  .tooltip {
+    position: relative;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Audiowide", cursive;
+    text-align: center;
+    padding: 15px 0;
+
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+</style>
+
+<div class="parallax">
+  <h2 class="main-text">{%NAME%}</h2>
+  <div class="bg-text"></div>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="moon.html">Moon</a>
+    <a href="venus.html">Venus</a>
+    <a href="saturn.html">Saturn</a>
+    <a href="mars.html">Mars</a>
+    <a href="jupiter.html">Jupiter</a>
+  </nav>
+</div>
+<div class="page">
+  <main class="main">
+    <section class="tooltip">
+      <small class="tooltiptext">Info</small>
+      <i class="fas fa-info-circle tooltip"></i>
+      <p>{%DESCRIPTION%}</p>
+    </section>
+    <section class="tooltip">
+      <small class="tooltiptext">Fun Facts</small>
+      <i class="fas fa-meteor"></i>
+      <p>{%FACTS%}</p>
+    </section>
+    <section class="tooltip">
+      <small class="tooltiptext">Distance</small>
+      <i class="fas fa-space-shuttle"></i>
+      <p>{%DISTANCE%}</p>
+    </section>
+    <section class="tooltip">
+      <small class="tooltiptext">First Visit</small>
+      <i class="fas fa-user-astronaut"></i>
+      <p>{%FIRST_VISITED%}</p>
+    </section>
+  </main>
+</div>
+<script>
+  const icons = Array.from(document.querySelectorAll(`i`));
+  const sectionPara = Array.from(document.querySelectorAll(`section>p`));
+  const section = Array.from(document.querySelectorAll(`section`));
+
+  icons.forEach((curr, i) => {
+    curr.addEventListener(`click`, (e) => {
+      e.preventDefault();
+      if (curr.style.fontSize === `100px`) {
+        curr.classList.add(`showUp`);
+        curr.style.fontSize = `20px`;
+        sectionPara[i].style.display = "block";
+      } else {
+        curr.classList.remove(`showUp`);
+        curr.style.fontSize = `100px`;
+        sectionPara[i].style.display = "none";
+      }
+    });
+  });
+
+  icons.forEach((curr) => {
+    curr.addEventListener(`mouseover`, (e) => {
+      e.preventDefault();
+      curr.style.color = `gray`;
+      setTimeout(() => {
+        curr.style.color = `black`;
+      }, 300);
+    });
+  });
+</script>

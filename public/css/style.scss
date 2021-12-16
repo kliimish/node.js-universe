@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$font_main: "Poppins", sans-serif;
+$font_main: "Audiowide", cursive;
+
+//removindg default styling
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.parallax {
+  position: relative;
+  /* The image used */
+  background-image: url("../earth.jpg");
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-text {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-family: $font_main;
+  color: white;
+  font-size: 100px;
+  animation: showUp 3s forwards;
+  z-index: 1;
+}
+.bg-text {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  height: 150px;
+  width: 30%;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.page {
+  display: grid;
+  height: 800px;
+}
+
+.nav-bar {
+  position: absolute;
+  left: 0%;
+  top: 90%;
+  width: 100%;
+  padding: 15px;
+  display: grid;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-family: $font_main;
+  z-index: 1;
+
+  & a {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    opacity: 0.5;
+    z-index: 0;
+
+    &:hover {
+      animation: border 1s;
+      animation-fill-mode: forwards;
+      opacity: 1;
+    }
+  }
+}
+//main container
+.main {
+  width: 80%;
+  margin: auto;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.text--icons {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  border: 2px solid red;
+  text-align: center;
+  font-family: $font_main;
+}
+
+.forwards {
+  animation: shrink 0.5s forwards;
+}
+.backwards {
+  animation: shrink 0.5s backwards;
+}
+
+@keyframes shrink {
+  from {
+    font-size: 100px;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes border {
+  0% {
+    border: none;
+  }
+  25% {
+    border-bottom: 1px solid black;
+  }
+  50% {
+    border-left: 1px solid black;
+  }
+  75% {
+    border-top: 1px solid black;
+  }
+  100% {
+    border: 1px solid black;
+  }
+}
+.container {
+  position: relative;
+}
+
+section {
+  min-height: 20%;
+  max-height: 20%;
+}
+
+section > i {
+  font-size: 100px;
+  color: black;
+  position: relative;
+  top: 30%;
+  left: 45%;
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+section > p {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  font-family: $font_main;
+  font-size: 20px;
+}

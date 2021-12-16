@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/e90d9678f0.js" crossorigin="anonymous"></script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.parallax {
+  position: relative;
+  /* The image used */
+  background-image: url("{%IMAGE%}");
+  /* Set a specific height */
+  min-height: 800px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-text {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-family: "Audiowide", cursive;
+  color: white;
+  font-size: 100px;
+  -webkit-animation: showUp 3s forwards;
+          animation: showUp 3s forwards;
+  z-index: 1;
+}
+
+.bg-text {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  height: 150px;
+  width: 30%;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.page {
+  display: -ms-grid;
+  display: grid;
+  height: 800px;
+}
+
+.nav-bar {
+  position: absolute;
+  left: 0%;
+  top: 90%;
+  width: 100%;
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-family: "Audiowide", cursive;
+  z-index: 1;
+}
+
+.nav-bar a {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.nav-bar a:hover {
+  -webkit-animation: border 1s;
+          animation: border 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  height: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.text--icons {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  border: 2px solid red;
+  text-align: center;
+  font-family: "Audiowide", cursive;
+}
+
+.forwards {
+  -webkit-animation: shrink 0.5s forwards;
+          animation: shrink 0.5s forwards;
+}
+
+.backwards {
+  -webkit-animation: shrink 0.5s backwards;
+          animation: shrink 0.5s backwards;
+}
+
+@-webkit-keyframes shrink {
+  from {
+    font-size: 100px;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+
+@keyframes shrink {
+  from {
+    font-size: 100px;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+
+@-webkit-keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes border {
+  0% {
+    border: none;
+  }
+  25% {
+    border-bottom: 1px solid black;
+  }
+  50% {
+    border-left: 1px solid black;
+  }
+  75% {
+    border-top: 1px solid black;
+  }
+  100% {
+    border: 1px solid black;
+  }
+}
+
+@keyframes border {
+  0% {
+    border: none;
+  }
+  25% {
+    border-bottom: 1px solid black;
+  }
+  50% {
+    border-left: 1px solid black;
+  }
+  75% {
+    border-top: 1px solid black;
+  }
+  100% {
+    border: 1px solid black;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+section {
+  min-height: 20%;
+  max-height: 20%;
+}
+
+section > i {
+  font-size: 100px;
+  color: black;
+  position: relative;
+  top: 30%;
+  left: 45%;
+  opacity: 0.4;
+}
+
+section > i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+section > p {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  font-family: "Audiowide", cursive;
+  font-size: 20px;
+}
+
+</style>
+    <title>Universe</title>
+    <div class="parallax"><h2 class="main-text">Earth</h2>
+      <div class="bg-text"></div>
+        <nav class="nav-bar">
+          <a href="index.html">Home</a>
+          <a href="moon.html">Moon</a>
+          <a href="venus.html">Venus</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+    </nav>
+  </div>
+      <div class="page">
+        <main class="main">
+          <section>
+            <i class="fas fa-info-circle"></i>
+            <div>
+              <p> Bla bla</p>
+            </div>
+        
+          </section>
+            <section>
+        
+              <i class="fas fa-meteor"></i>
+              <p>Fun facts</p>
+            </section>
+          <section>
+            <i class="fas fa-space-shuttle"></i>
+            <p>Distance</p>
+         </section>
+          <section>
+            <i class="fas fa-user-astronaut"></i>
+            <p>First visited</p>
+       
+        </section>
+   
+        </main>
+      </div>
+    </head>
+      </div>
+     
+  <body>
+    <script>
+        const icons = Array.from(document.querySelectorAll(`i`));
+  const iconsText = document.querySelector(`.text--icons`);
+  const iconChanger = function (element) {
+    element.forEach(function (curr) {
+      curr.addEventListener(`click`, function (e) {
+        e.preventDefault();
+
+        curr.classList.add(`forwards`);
+        curr.style.left = `5%`;
+        curr.style.top = `5%`;
+        iconsText.style.visibility = `visible`;
+
+        // curr.style.left = `45%`;
+        // curr.style.top = `10%`;
+        // iconsText.style.visibility = `hidden`;
+      });
+    });
+  };
+
+  iconChanger(icons);
+    </script>
+  </body>
+</html>
