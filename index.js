@@ -1,8 +1,7 @@
 const http = require("http");
-const url = require("url");
+
 const fs = require("fs");
 
-const mainHtml = fs.readFileSync(`${__dirname}/templates/index.html`, `utf-8`);
 const tempHtml = fs.readFileSync(
   `${__dirname}/templates/template-index.html`,
   `utf-8`
